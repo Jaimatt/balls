@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    user-select: none;
+}
+canvas {
+    background-color: black;
+    position: fixed;
+    background-image: url('back.png');
+    background-size: cover;
+    background-position: center;
+}
+div {
+    color: white;
+    position: fixed;
+    float: top;
+    font-family: sans-serif;
+    margin: 5px;
+    font-size: 11px;
+}
+p {
+    margin: 0;
+}
+button {
+    font-size: 11px;
+    margin-bottom: 2px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}

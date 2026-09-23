@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balls</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+
+            background-image: url('back.png');
+            background-size: cover;
+            background-position-x: center;
+            background-repeat: no-repeat;
+        }
+        img {
+            width: 100px;
+            margin: 20px;
+            /* filter: saturate(0); */
+        }
+        h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+        p {
+            margin-top: 0;
+            font-size: 14px;
+        }
+        .div {
+            width: 200px;
+            height: 120px;
+            background-color: black;
+            display: inline-block;
+            border-radius: 20px;
+            padding: 10px;
+            position: relative;
+            cursor: pointer;
+            transition-duration: 300ms;
+            background-size: cover;
+            background-position: center;
+            margin: 10px;
+        }
+        .div:hover {
+            transform: translate(-6px,-6px);
+            box-shadow: rgb(145, 144, 144) 3px 3px 0px;
+        }
+        h2 {
+            bottom: 0;
+            position: absolute;
+            color: white;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 10px;
+            text-shadow: black 3px 3px 5px;
+            text-decoration: none;
+        }
+        .home {
+            color: white;
+            transition-duration: 300ms;
+            margin-top: 50px;
+            font-size: 15px;
+        }
+        .home:hover {
+            transform: translate(0,-5px);
+            color: rgb(255, 0, 212);
+        }
+        .whole {
+            /* background-color: plum; */
+            max-width: 800px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <img src='../assets/icon.png'>
+    <h1>Balls</h1>
+    <p>Enjoy a range of interactive animations featuring... Balls!</p>
+
+    <div class="whole">
+        <a href="shatter.html"><div class="div" style="background-image: url('shatter.png');">
+            <h2>Shatter</h2>
+        </div></a>
+
+        <a href="explosion.html"><div class="div" style="background-image: url('explosion.png');">
+            <h2>Explosion</h2>
+        </div></a>
+
+        <a href="rainbow.html"><div class="div" style="background-image: url('rainbow.png');">
+            <h2>Rainbow</h2>
+        </div></a>
+
+        <!-- <a href=""><div class="div" style="background-image: url('back.png');">
+            <h2>More to Come...</h2>
+        </div></a> -->
+    </div>
+    
+    <br>
+    <p class="home"><a href="../index.html" class="home">jaimatthews.com</a></p>
+</body>
+</html>
+<script id="linkto" src="balls.js"></script>
